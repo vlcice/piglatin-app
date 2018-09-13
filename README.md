@@ -1,0 +1,6 @@
+# Pig Latin
+
+```
+composer install
+```  
+

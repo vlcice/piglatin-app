@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pig Latin translator</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link href="assets/css/style.css?v=1" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="msg-box">
+        {% if errorMessage %}
+            <div class="alert alert-warning" role="alert">
+                {{ errorMessage }}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="wrapper">
+    <div class="main">
+    <h1>Pig Latin translator</h1>
+        <form action="index.php" name="main-form" method="post">
+            <input type="hidden" name="errorMessage" value="{{ errorMessage }}">
+            <div class="row">
+                <div class="col">
+                    <label>Input string</label>
+                    <input name=input class="form-control" type="text" value="{{ input }}"/>
+                </div>
+                <div class="col">
+                    <label>Translated string</label>
+                    <input name=translated class="form-control" type="text" value="{{ translation }}"/>
+                </div>
+            </div>
+            <div class="row btn-row">
+                <div class="col">
+                    <input value="Translate" type="submit" class="btn"/>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
+</body>
+</html>

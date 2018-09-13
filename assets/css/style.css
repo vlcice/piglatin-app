@@ -1,0 +1,11 @@
+.main,.msg-box,.btn-row {
+    margin-top: 20px;
+}
+
+.msg-box {
+    min-height: 100px;
+}
+
+.btn-row .btn {
+    float: right;
+}
