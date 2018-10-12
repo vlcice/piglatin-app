@@ -1,7 +1,9 @@
 {
     "require": {
-        "twig/twig": "^2.5",
-        "symfony/var-dumper": "^4.1",
+        "vlcice/piglatin": "dev-master",
+        "twig/twig": "^2.5"
+    },
+    "require-dev": {
         "vlcice/piglatin": "dev-master"
     }
 }
